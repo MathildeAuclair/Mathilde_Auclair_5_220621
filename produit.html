@@ -31,6 +31,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="panier.html">Panier</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="commande.html">Commande</a>
+              </li>
             </ul>
           </div>
           </div>
@@ -43,12 +46,13 @@
             <div class="row">
                 <div class="col-12">
             <h1 class="text-center">Détails de votre sélection</h1>
-            <p class="text-center">Des informations complémentaires sont disponible afin de choisir le meilleur objectif et lentilles pour votre style de photographie !</p>
+            <p class="text-center mb-4">Des informations complémentaires sont disponible afin de choisir le meilleur objectif et lentilles pour votre style de photographie !</p>
             </div>
           </div>
         </div>
 
-        <div class="card col-7" style="img-fluid">
+        <div class="d-flex justify-content-center mb-4">
+        <div class="card col-6" style="img-fluid">
           <img src="images/vcam_1.jpg" class="card-img-top" alt="Photographie du produit">
           <div class="card-body">
             <h5 class="card-title">Nom du produit</h5>
@@ -62,17 +66,37 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">50mm</th>
-                  <td>1-9</td>
-                </tr>
-                <tr>
-                  <th scope="row">35mm</th>
-                  <td>1-9</td>
+                  <th scope="row">
+                    <div class="form-group">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>35mm</option>
+                        <option>50mm</option>
+                      </select>
+                    </div> 
+                  </th>
+                  <td>
+                    <div class="form-group">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                    </div> 
+                  </td>
                 </tr>
               </tbody>
-            </table>         
-            <h6 class="text-center">Prix : 300 euros</h6>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            </table>      
+            <p class="text-center mb-3"><strong>Prix : 300 €</strong></p>
+            <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-dark col-5 mb-2">Ajouter au panier</a>
+          </div>
           </div>
           </div>
   </main>
@@ -83,15 +107,15 @@
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
           ><i class="fab fa-facebook-f"></i
         ></a>
         <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com/" role="button"
           ><i class="fab fa-twitter"></i
         ></a>
         <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
           ><i class="fab fa-instagram"></i
         ></a>
   
@@ -102,7 +126,7 @@
   
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2021 Copyright
+      © 2021 Orinoco
     </div>
     <!-- Copyright -->
   </footer>
